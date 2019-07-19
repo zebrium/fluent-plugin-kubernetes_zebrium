@@ -40,7 +40,7 @@ module Fluent::Plugin
         end
 
         unless @exclude_pod_regex.empty?
-          if Regexp.compile(@exclude_pod_regex).match(k8s_metadata[:pod]) and not include
+          if Regexp.compile(@exclude_pod_regex).match(k8s_metadata[:pod])
             return nil
           end
         end
