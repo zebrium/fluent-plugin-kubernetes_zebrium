@@ -1,10 +1,15 @@
 #!/bin/sh
 
-echo "Build Zebrium Fluentd filter plugin"
+. /auto/share/etc/functions
+
+PROG=${0##*/}
 
 PLUGIN_NAME="fluent-plugin-kubernetes_zebrium"
 
-echo "Build gem $PLUGIN_NAME"
-gem build $PLUGIN_NAME
+main() {
+    echo "Build Zebrium Fluentd Kubernetes filter plugin"
+    gem build $PLUGIN_NAME
+    echo "DONE"
+}
 
-echo "DONE"
+main "$@"

@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-kubernetes_zebrium"
-  gem.version       = "0.1.0"
+  gem.version       = "1.0.0"
   gem.authors       = ["Zebrium"]
   gem.description   = %q{Zebrium fluentd filter plugin to collect logs and meta data from Kubernetes clusters.}
   gem.summary       = %q{Zebrium fluentd for Kubernetes.}
