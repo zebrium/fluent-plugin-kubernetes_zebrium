@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Zebrium fluentd for Kubernetes.}
   gem.homepage      = "https://github.com/Zebrium/fluentd-kubernetes-zebrium"
   gem.license       = "Apache-2.0"
+  gem.metadata      = { "git-version" => `git log -n 1 --pretty=format:"%H"` }
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
