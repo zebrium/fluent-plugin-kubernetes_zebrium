@@ -4,7 +4,7 @@
     stages {
         stage('Build and Publish Gem'){
             steps{
-                buildGem(false, "fluent-plugin-kubernetes_zebrium")
+                buildGem("fluent-plugin-kubernetes_zebrium")
             }
         }
    }
